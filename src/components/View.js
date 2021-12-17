@@ -21,7 +21,7 @@ const View = (props) => {
             .catch(err => {
                 console.log(err);
             });
-    });
+    }, []);
 
     const handleDelete = (id) => {
         axiosWithAuth()
