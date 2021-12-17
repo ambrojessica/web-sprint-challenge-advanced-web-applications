@@ -5,20 +5,24 @@ import styled from 'styled-components';
 import Header from './Header';
 import BloomHeader from './BloomHeader';
 import Login from './Login';
+import Logout from './Logout';
+import View from './View';
+import PrivateRoute from './PrivateRoute';
 
 const App = () => {
   return (
     <AppContainer>
-      <BloomHeader/>
-      <Header/>
+      <BloomHeader />
+      <Header />
       <RouteContainer>
-        <Route exact path="/">
-          <Login/>
-        </Route>          
+        <Route exact path="/" component={Login} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/view" component={View} />
+        <Route exact path="/logout" component={Logout} />
       </RouteContainer>
     </AppContainer>
-  )
-}
+  );
+};
 
 export default App;
 
@@ -31,10 +35,10 @@ export default App;
 
 const AppContainer = styled.div`
   height: 100%;
-`
+`;
 const RouteContainer = styled.div`
   display: flex;
   height: 85%;
   align-items: center;
   flex-direction: column;
-`
+`;
