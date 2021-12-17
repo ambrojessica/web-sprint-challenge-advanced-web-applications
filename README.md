@@ -118,8 +118,16 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain what a token is used for.
 
+A token in React is used to cover important and private data, it is mainly a string of text. They are produced by the server and then can be stored for the next use, the token gets used locally however once the user is done, it sends back to be stored.
+
 2. What steps can you take in your web apps to keep your data secure?
+
+The steps would be authentication and authorization, these will help out the user and will make them come back knowing their information is private and safe. Authentication is when the web app makes sure it's the correct users information and to check if the user can access the information or it wont go further. Authorization is the process that you do in your web app, you create the process so that if the information does not align the user cannot proceed, this step gives it the green or red light.  
 
 3. Describe how web servers work.
 
+A web server is a computer that runs code for a website, this program executes web apps. They work by storing, processing and displaying a web page, this is how we are able to see the websites that we create. 
+
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+The HTTPS methods we can use similarly to the CRUD is the PUT and DELETE. PUT would be similar to the Update in CRUD, when using PUT we are trying to change information, we take the information from the PUT and we get new data however, since every api is different so we get a different return. DELETE is similar to the delete in CRUD, when using DELETE we are taking away data from the server, it's advised to not use it regularly because it can be risky and we want to double check to make sure the right data is being deleted.
